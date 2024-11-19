@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;     
+}
+
+.protfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.navlist li{
+    list-style: none;
+}
+
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: black;
+    position: relative;
+}
+
+.left-conatiner, .right-conatiner{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left-conatiner{
+    background-color: rgb(234, 77, 150);
+    width: 70%;
+    padding-left: 3rem;
+}
+
+.right-conatiner{
+    background-color: rgb(180, 68, 171);
+    width: 30%;
+}
+
+.icons .fa-brands{
+    color: black;
+    font-size: 1.7rem;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.content{
+    margin-left: 4rem;
+}
+
+.content .intro{
+    font-size: 2.7rem;
+
+}
+
+.content .intro span{
+    color: rgb(71, 6, 81);
+}
+
+.content h1{
+    font-size: 4rem;
+    color: rgb(30, 17, 17);
+    
+}
+
+.btn-container button{
+    border: 0.5rem solid  rgb(71, 6, 81);
+    font-size: 1rem;
+    padding: 0.2rem 1.5rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    transition: .5s ease;
+}
+
+button:nth-child(1){
+    background: blueviolet;
+    color: azure;
+}
+
+button:nth-child(2){
+    background: transparent;
+    color:rgb(71, 6, 81);
+    margin-left: 2rem;
+    color: azure;
+}
+
+button:nth-child(1):hover{
+    background: transparent;
+    color: blueviolet;
+}
+
+button:nth-child(2):hover{
+    background: blueviolet;
+    color: azure;
+}
+
+.icons .fa-brands{
+    cursor: pointer;
+    background: linear-gradient(black, rgb(71,6,81));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.circle:nth-child(1){
+    background: white;
+    width: 40rem;
+}
+
+.circle:nth-child(2){
+    width: 30rem;
+    background-image: url("portfolio website/C:\Users\HP\Desktop\Portfolio Website\WhatsApp Image 2024-11-16 at 18.52.38_7360ef5e copy.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.navlist li a::after, .navlist .active::after{
+    content: "";
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: .2rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s ease;
+
+}
+
+.navlist li a:hover::after, .navlist .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.image img{
+    position: absolute;
+    height: 135%;
+    left: 40%;
+    transform: translate(-55%);
+    bottom: 8%;
+    transition: left 2s ease;
+}
+
+.image:hover .girl{
+    left: 20%;
+
+}
